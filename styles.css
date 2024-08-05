@@ -1,0 +1,62 @@
+.logo{
+    margin-left: 650px;
+    margin-top: 150px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* X-offset Y-offset Blur Color */
+}
+
+p{
+ margin-left:690px;
+ color: rgb(0, 68, 255);
+font-family: 'Montserrat', sans-serif;; 
+font-size: 40px;
+margin-top: -20px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* X-offset Y-offset Blur Color */
+}
+
+h3{
+ margin-left: 770px;
+margin-top: 220px;
+}
+body {
+    background-color: rgb(255, 244, 229);
+}
+
+svg {
+    width: 3.25em;
+    transform-origin: center;
+    animation: rotate4 2s linear infinite;
+    margin-left: 750px;
+   }
+   
+   circle {
+    fill: none;
+    stroke: hsl(214, 97%, 59%);
+    stroke-width: 2;
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    animation: dash4 1.5s ease-in-out infinite;
+   }
+   
+   @keyframes rotate4 {
+    100% {
+     transform: rotate(360deg);
+    }
+   }
+   
+   @keyframes dash4 {
+    0% {
+     stroke-dasharray: 1, 200;
+     stroke-dashoffset: 0;
+    }
+   
+    50% {
+     stroke-dasharray: 90, 200;
+     stroke-dashoffset: -35px;
+    }
+   
+    100% {
+     stroke-dashoffset: -125px;
+    }
+   }
+   
